@@ -1,0 +1,115 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+
+/* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li,/* list elements 列表元素 */
+
+pre,/* text formatting elements 文本格式元素 */
+
+fieldset, lengend, button, input, textarea,/* form elements 表单元素 */
+
+th, td {
+
+    /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+.slideshow {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.slideshow-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    -webkit-animation-name: kenburns;
+    animation-name: kenburns;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 10S;
+    animation-duration: 10S;
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+@-webkit-keyframes ban-animation {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes ban-animation {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/*底部点击切换*/
+.banner {
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+}
+.banner li:nth-child(1) {
+    font-size: 40px;
+    margin-top: 10%;
+    letter-spacing: 8px
+}
+.banner li:nth-child(2) {
+    font-size: 70px;
+    letter-spacing: 18px;
+    margin: 50px;
+}
+.banner li:nth-child(3) {
+    font-size: 20px;
+    letter-spacing: 8px;
+    padding: 10px;
+    border: 1px solid #FFf;
+    width: 150px;
+    line-height: 30px;
+    margin-left: 46%;
+    cursor: pointer;
+}
+.footSwitch {
+    position: fixed;
+    bottom: 50px;
+    left: 31%;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: 100;
+    z-index: 100;
+}
+.footSwitch li {
+    display: inline-block;
+    font-size: 30px;
+    //border-bottom: 2px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.businessman {
+    width: 150px;
+    margin: 0 20px;
+}
